@@ -64,13 +64,13 @@ header{
     text-align: center;
 }
 
-.buttons:hover{
+buttons:hover{
     text-decoration: underline;
     color: #fb52b5;
     transition: color 0.2s;
 }
 
-.buttons:after{
+buttons:active{
     width: 100%;
     padding: 10px 20px;
     margin: 8px 0;
