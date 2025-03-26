@@ -22,15 +22,7 @@ header{
     box-shadow: 0 0 10px black;
 }
 
-.wrapper {
-    width: 450px;
-    background: rgba(255, 255, 255, 0.43); /* Use rgba for transparent background with opacity */
-    color: rgb(0, 0, 0);
-    margin: 0 auto;
-    padding: 30px 40px;
-}
-
-.wrapper h1 {
+.body h1 {
     font-size: 36px;
     text-align: center;
     margin-bottom: 30px;
