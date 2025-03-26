@@ -90,6 +90,5 @@ header{
 }
 .input[type="text"] {
     background-color: solid white;
-    border: 2px solid red;
     border-radius: 4px;
 }
