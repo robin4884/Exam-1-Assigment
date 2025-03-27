@@ -1,2 +1,14 @@
-/* Here will be the Java to Store, Sort, and pop up with a earror message if Movie already exists */
-/* This is also where it will add it to the MovieP and refresh the page automaticly */
+
+public class MoviesPNewM {
+    public static void main(String[] args) {
+        MoviesPMath manager = new MoviesPMath();
+
+        manager.addMovie("Inception");
+        manager.addMovie("The Matrix");
+        manager.addRating("Inception", 5);
+        manager.addRating("Inception", 4);
+        manager.addRating("The Matrix", 3);
+        manager.generateRandomRating("The Matrix");
+        manager.displayMovieRatings();
+    }
+} 

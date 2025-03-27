@@ -1,5 +1,7 @@
 
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -11,23 +13,37 @@ body {
     min-height: 100vh;
     background: pink;
     background-size: cover;
+    flex-direction: column;
 }
-header{
-    position: Fixed;
+
+header {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 150px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px black;
+    z-index: 1000;
+    text-align: center;
 }
 
-.body h1 {
+.wrapper {
+    width: 450px;
+    background: rgba(255, 255, 255, 0.43);
+    color: rgb(0, 0, 0);
+    border-radius: 12px;
+    margin-top: 100px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
     font-size: 36px;
     text-align: center;
     margin-bottom: 30px;
 }
- .p {
+
+.p {
     width: 100%;
     padding: 10px 20px;
     margin: 8px 0;
@@ -54,41 +70,53 @@ header{
     cursor: pointer;
 }
 
-.buttons:hover{
+.buttons:hover {
     text-decoration: underline;
     color: #fb52b5;
     transition: color 0.2s;
 }
 
-.buttons:active{
-    width: 100%;
-    padding: 10px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
+.buttons:active {
     border: 2px solid #fb52b5;
-    border-radius: 40px;
-    background-color:#fb52b5;
-    color: rgb(255, 255, 255);
-    transition: 0.4s ease-in-out;
-    text-align: center;
-    text-decoration: underline;
+    background-color: #fb52b5;
     color: #ffffff;
-    transition: color 0.2s;
     box-shadow: 0 0 10px black;
 }
 
-.input-box {
-    width: 100%;
-    padding: 10px 20px;
+.movie-item {
     margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 40px;
-    background-color: transparent;
-    color: white;
-    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    padding: 6px 10px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.movie-name {
+    font-weight: 500;
+}
+
+.movie-options {
+    margin-top: 6px;
+    display: none;
+}
+
+.category-section h2 {
+    background: #ffe1f0;
+    padding: 6px;
+    border-radius: 6px;
+    margin-top: 20px;
     text-align: center;
 }
-.input[type="text"] {
-    background-color: solid white;
-    border-radius: 4px;
+
+.avg-rating {
+    display: inline-block;
+    margin-left: 10px;
+    color: #444;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
 }
